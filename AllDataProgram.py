@@ -126,3 +126,9 @@ for x in range(0, Length):
     PsysZ.append(newPsysZ) 
     newPsys = newPsysX**2 + newPsysY**2 + newPsysZ**2
     Psys.append(newPsys)
+
+## Finding Invariant Mass
+InvMass = []
+for x in range(0, Length):
+    newInvMass = math.sqrt(Esys[x]**2 - Psys[x])
+    InvMass.append(newInvMass)
