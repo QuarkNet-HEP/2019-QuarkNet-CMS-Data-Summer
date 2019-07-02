@@ -130,5 +130,11 @@ for x in range(0, Length):
 ## Finding Invariant Mass
 InvMass = []
 for x in range(0, Length):
-    newInvMass = math.sqrt(Esys[x]**2 - Psys[x])
+    if (Esys[x][0]**2 - Psys[x] > 0):
+        if (Esys[x][0] != 0):
+            newInvMass = math.sqrt((Esys[x][0]**2) - Psys[x])
+        else: 
+            newInvMass = 0
+    else:
+        newInvMass = 0
     InvMass.append(newInvMass)
