@@ -90,9 +90,9 @@ PsysX = []
 PsysY = []
 PsysZ = []
 for x in range(0, Length): 
-    newPsysX = [0]
-    newPsysY = [0]
-    newPsysZ = [0]
+    newPsysX = 0
+    newPsysY = 0
+    newPsysZ = 0
     if not Jet_Px[x].size == 0 :
         newPsysX += Jet_Px[x][0]
     if not Jet_Py[x].size == 0 :
@@ -124,5 +124,5 @@ for x in range(0, Length):
     PsysX.append(newPsysX) 
     PsysY.append(newPsysY) 
     PsysZ.append(newPsysZ) 
-   
-Psys = newPsysX**2 + newPsysY**2 + newPsysZ**2
+    newPsys = newPsysX**2 + newPsysY**2 + newPsysZ**2
+    Psys.append(newPsys)
