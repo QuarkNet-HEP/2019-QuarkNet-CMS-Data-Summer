@@ -48,16 +48,16 @@ Photon_E = events.array("Photon_E")
 Photon_Iso = events.array("Photon_Iso")
 
 #MET Data
-MET_P = events.arrays("MET_p[xy]*", outputtype = collections.namedtuple)
+MET_Px, MET_Py = events.arrays("MET_p[xy]*", outputtype = collections.namedtuple)
 
 #M Data
-MChadronicBottom_P = events.arrays("MChadronicBottom_p[xyz]*", outputtype = collections.namedtuple)
-MCleptonicBottom_p = events.arrays("MCleptonicBottom_p[xyz]*", outputtype = collections.namedtuple)
-MChadronicWDecayQuark_P = events.arrays("MChadronicWDecayQuark_p[xyz]*", outputtype = collections.namedtuple)
-MChardronicWDecayQuarkBar_P = events.arrays("MChardronicWDecayQuarkBar_p[xyz]*", outputtype = collections.namedtuple)
-MClepton_P = events.arrays("MClepton_p[xyz]*", outputtype = collections.namedtuple)
+MChadronicBottom_Px, MChadronicBottom_Py, MChadronicBottom_Pz = events.arrays("MChadronicBottom_p[xyz]*", outputtype = collections.namedtuple)
+MCleptonicBottom_Px, MCleptonicBottom_Py, MCleptonicBottom_Pz = events.arrays("MCleptonicBottom_p[xyz]*", outputtype = collections.namedtuple)
+MChadronicWDecayQuark_Px, MChadronicWDecayQuark_Py, MChadronicWDecayQuark_Pz = events.arrays("MChadronicWDecayQuark_p[xyz]*", outputtype = collections.namedtuple)
+MChardronicWDecayQuarkBar_Px, MChardronicWDecayQuarkBar_Py, MChardronicWDecayQuarkBar_Pz = events.arrays("MChardronicWDecayQuarkBar_p[xyz]*", outputtype = collections.namedtuple)
+MClepton_Px, MClepton_Py, MClepton_Pz = events.arrays("MClepton_p[xyz]*", outputtype = collections.namedtuple)
 MCleptonPDGid = events.array("MCleptonPDGid")
-MCneutrino_P = events.arrays("MCneutrino_p[xyz]*", outputtype = collections.namedtuple)
+MCneutrino_Px, MCneutrino_Py, MCneutrino_Pz = events.arrays("MCneutrino_p[xyz]*", outputtype = collections.namedtuple)
 NPrimaryVertices = events.array("NPrimaryVertices")
 triggerIsoMu24 = events.array("triggerIsoMu24")
 EventWeight = events.array("EventWeight")
@@ -117,5 +117,3 @@ for x in range(0, Length):
         newPsys += Photon_Pz[x][0]
         
     Psys.append(newPsys) #Appends Array  
-
-## Mu Quality
