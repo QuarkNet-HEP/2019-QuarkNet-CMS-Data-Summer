@@ -74,11 +74,14 @@ EventWeight = events.array("EventWeight")
 ## Finding Esys 
 Esys = [] 
 for x in range(0, Length): 
-    newEsys = [0]
+    newEsys = 0
     if not Jet_E[x].size == 0 :
         newEsys += Jet_E[x][0]
     if not Muon_E[x].size == 0 :
-        newEsys += Muon_E[x][0]
+        if NMuon[x] == 1:
+            newEsys += Muon_E[x][0]
+        if NMuon[x] == 2:
+            newEsys += Muon_E[x][1]
     if not Electron_E[x].size == 0 :
         newEsys += Electron_E[x][0]
     if not Photon_E[x].size == 0 :
