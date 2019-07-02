@@ -14,6 +14,9 @@ import collections
 file = uproot.open("ttbar.root")
 events = uproot.open("ttbar.root")["events"]
 
+##--CONSTANTS--##
+Length = len(Jet_E)
+
 ##--DATA--#####################################################################
 
 #Jet Data
@@ -63,8 +66,6 @@ triggerIsoMu24 = events.array("triggerIsoMu24")
 EventWeight = events.array("EventWeight")
 
 ###############################################################################
-
-Length = len(Jet_E)
 
 #
 # Analyze 
