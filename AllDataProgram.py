@@ -54,7 +54,7 @@ MET_Px, MET_Py = events.arrays("MET_p[xy]*", outputtype = collections.namedtuple
 MChadronicBottom_Px, MChadronicBottom_Py, MChadronicBottom_Pz = events.arrays("MChadronicBottom_p[xyz]*", outputtype = collections.namedtuple)
 MCleptonicBottom_Px, MCleptonicBottom_Py, MCleptonicBottom_Pz = events.arrays("MCleptonicBottom_p[xyz]*", outputtype = collections.namedtuple)
 MChadronicWDecayQuark_Px, MChadronicWDecayQuark_Py, MChadronicWDecayQuark_Pz = events.arrays("MChadronicWDecayQuark_p[xyz]*", outputtype = collections.namedtuple)
-MChardronicWDecayQuarkBar_Px, MChardronicWDecayQuarkBar_Py, MChardronicWDecayQuarkBar_Pz = events.arrays("MChardronicWDecayQuarkBar_p[xyz]*", outputtype = collections.namedtuple)
+MChadronicWDecayQuarkBar_Px, MChadronicWDecayQuarkBar_Py, MChadronicWDecayQuarkBar_Pz = events.arrays("MChadronicWDecayQuarkBar_p[xyz]*", outputtype = collections.namedtuple)
 MClepton_Px, MClepton_Py, MClepton_Pz = events.arrays("MClepton_p[xyz]*", outputtype = collections.namedtuple)
 MCleptonPDGid = events.array("MCleptonPDGid")
 MCneutrino_Px, MCneutrino_Py, MCneutrino_Pz = events.arrays("MCneutrino_p[xyz]*", outputtype = collections.namedtuple)
@@ -86,34 +86,43 @@ for x in range(0, Length):
     
 ## Finding Psys
 Psys = [] 
+PsysX = []
+PsysY = []
+PsysZ = []
 for x in range(0, Length): 
-    newPsys = [0]
+    newPsysX = [0]
+    newPsysY = [0]
+    newPsysZ = [0]
     if not Jet_Px[x].size == 0 :
-        newPsys += Jet_Px[x][0]
+        newPsysX += Jet_Px[x][0]
     if not Jet_Py[x].size == 0 :
-        newPsys += Jet_Py[x][0]
+        newPsysY += Jet_Py[x][0]
     if not Jet_Pz[x].size == 0 :
-        newPsys += Jet_Pz[x][0]
+        newPsysZ += Jet_Pz[x][0]
         
     if not Muon_Px[x].size == 0 :
-        newPsys += Muon_Px[x][0]
+        newPsysX += Muon_Px[x][0]
     if not Muon_Py[x].size == 0 :
-        newPsys += Muon_Py[x][0]
+        newPsysY += Muon_Py[x][0]
     if not Muon_Pz[x].size == 0 :
-        newPsys += Muon_Pz[x][0]
+        newPsysZ += Muon_Pz[x][0]
         
     if not Electron_Px[x].size == 0 :
-        newPsys += Electron_Px[x][0]
+        newPsysX += Electron_Px[x][0]
     if not Electron_Py[x].size == 0 :
-        newPsys += Electron_Py[x][0]
+        newPsysY += Electron_Py[x][0]
     if not Electron_Pz[x].size == 0 :
-        newPsys += Electron_Pz[x][0]
+        newPsysZ += Electron_Pz[x][0]
         
     if not Photon_Px[x].size == 0 :
-        newPsys += Photon_Px[x][0]
+        newPsysX += Photon_Px[x][0]
     if not Photon_Py[x].size == 0 :
-        newPsys += Photon_Py[x][0]
+        newPsysY += Photon_Py[x][0]
     if not Photon_Pz[x].size == 0 :
-        newPsys += Photon_Pz[x][0]
-        
-    Psys.append(newPsys) #Appends Array  
+        newPsysZ += Photon_Pz[x][0]
+      
+    PsysX.append(newPsysX) 
+    PsysY.append(newPsysY) 
+    PsysZ.append(newPsysZ) 
+   
+Psys = newPsysX**2 + newPsysY**2 + newPsysZ**2
