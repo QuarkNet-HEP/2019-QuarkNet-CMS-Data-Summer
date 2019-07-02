@@ -139,7 +139,9 @@ for x in range(0, Length):
         #B=momentum/energy
         Bsq=Bx**2+By**2+Bz**2
         sqrtB=math.sqrt(Bsq)
-        B.append(sqrtB)
+    else:
+        sqrtB = 1
+    B.append(sqrtB)
     
     
 ## Finding Invariant Mass
