@@ -11,10 +11,8 @@ import matplotlib.pyplot as plt
 import math
 import collections
 
-nP = 100000
-
-file = uproot.open("HEPTutorial/files/data.root")
-events = uproot.open("HEPTutorial/files/data.root")["events"]
+file = uproot.open("ttbar.root")
+events = uproot.open("ttbar.root")["events"]
 
 ##--DATA--#####################################################################
 
@@ -66,6 +64,7 @@ EventWeight = events.array("EventWeight")
 
 ###############################################################################
 
+Length = len(Jet_E)
 
 #
 # Analyze 
@@ -73,7 +72,7 @@ EventWeight = events.array("EventWeight")
 
 ## Finding Esys 
 Esys = [] 
-for x in range(0, len(Jet_E)): 
+for x in range(0, Length): 
     newEsys = [0]
     if not Jet_E[x].size == 0 :
         newEsys += Jet_E[x][0]
@@ -85,9 +84,9 @@ for x in range(0, len(Jet_E)):
         newEsys += Photon_E[x][0]
     Esys.append(newEsys) #Appends Array
     
-#Finding Psys
+## Finding Psys
 Psys = [] 
-for x in range(0, len(Jet_Px)): 
+for x in range(0, Length): 
     newPsys = [0]
     if not Jet_Px[x].size == 0 :
         newPsys += Jet_Px[x][0]
@@ -118,5 +117,5 @@ for x in range(0, len(Jet_Px)):
         newPsys += Photon_Pz[x][0]
         
     Psys.append(newPsys) #Appends Array  
-        
-#edit
+
+## Mu Quality
