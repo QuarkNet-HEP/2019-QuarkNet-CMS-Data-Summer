@@ -161,8 +161,6 @@ rInvMass=[]
 crInvMass=[]
 for x in range(1, Length):    #nP-1 was here
         if B[x]>=0.03:
-            newInvMass=InvMass[x]
-            rInvMass.append(newInvMass)
-        elif B[x]<=0.03:
-            newcrInvMass=InvMass[x]
-            crInvMass.append(newcrInvMass)
+            rInvMass.append(InvMass[x])
+        else:
+            crInvMass.append(InvMass[x])
