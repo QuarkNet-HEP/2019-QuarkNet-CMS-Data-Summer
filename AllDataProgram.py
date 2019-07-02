@@ -130,14 +130,10 @@ for x in range(0, Length):
 ## Velocity Stuff 
 B = []
 for x in range(0, Length):
-    newPx=PsysX[x]
-    newPy=PsysY[x]
-    newPz=PsysZ[x]
-    newEsys=Esys[x]
-    if newEsys[0]!=0:
-        Bx=newPx/newEsys
-        By=newPy/newEsys
-        Bz=newPz/newEsys
+    if Esys[x][0]!=0:
+        Bx=PsysX[x]/Esys[x]
+        By=PsysY[x]/Esys[x]
+        Bz=PsysZ[x]/Esys[x]
         # Calculate Bsys, B and Gam for the current event
         #B=momentum/energy
         Bsq=Bx**2+By**2+Bz**2
