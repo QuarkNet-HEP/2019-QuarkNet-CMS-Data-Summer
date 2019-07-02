@@ -127,6 +127,24 @@ for x in range(0, Length):
     newPsys = newPsysX**2 + newPsysY**2 + newPsysZ**2
     Psys.append(newPsys)
 
+## Velocity Stuff 
+B = []
+for x in range(0, Length):
+    newPx=PsysX[x]
+    newPy=PsysY[x]
+    newPz=PsysZ[x]
+    newEsys=Esys[x]
+    if newEsys[0]!=0:
+        Bx=newPx/newEsys
+        By=newPy/newEsys
+        Bz=newPz/newEsys
+        # Calculate Bsys, B and Gam for the current event
+        #B=momentum/energy
+        Bsq=Bx**2+By**2+Bz**2
+        sqrtB=math.sqrt(Bsq)
+        B.append(sqrtB)
+    
+    
 ## Finding Invariant Mass
 InvMass = []
 for x in range(0, Length):
