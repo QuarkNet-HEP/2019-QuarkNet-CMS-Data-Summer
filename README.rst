@@ -12,20 +12,16 @@ it's native format, ROOT.
 
 * ROOT
 
-  * 'What is ROOT?'_
+  * `What is ROOT`_
   
-  * 'How to Install'_
+  * `How to Install`_
   
-  * 'Basic ROOT Structure'_
-`Internal and External links`_
-
-Internal and External links
-===========================
+  * `Basic ROOT Structure`_
 
 ROOT
 ====
 
-What is ROOT?
+What is ROOT
 =============
 
 ROOT is a file format developed and used by CERN to keep large amounts of data
