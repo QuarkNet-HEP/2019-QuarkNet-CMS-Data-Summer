@@ -24,10 +24,20 @@ import os
 import json
 import time
 
+# Was Originaly
+#def getFullPath(path):
+#    return os.path.join(os.environ['CMSSW_BASE'],
+#                        'src/OutreachExercise2011/DecaysToLeptons',
+#                        path)
+
+# Changed to
 def getFullPath(path):
     return os.path.join(os.environ['CMSSW_BASE'],
-                        'src/OutreachExercise2011/DecaysToLeptons',
+                        'src/QuarkNet-CMS-Data-Summer-2019/FromOutreach',
                         path)
+
+
+
 
 
 class EventBox(object):
