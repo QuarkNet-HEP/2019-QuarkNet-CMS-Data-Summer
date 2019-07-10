@@ -1,5 +1,5 @@
-.. _rst_tutorial: QuarkNet CMS Summer 2019
-                  ========================
+QuarkNet CMS Summer 2019
+========================
 
 Introduction
 ------------
@@ -12,7 +12,7 @@ it's native format, ROOT.
 
 * 'ROOT?'
 
-  * 'What is ROOT?'_
+  * :ref:`rst_tutorial`
   
   * 'How to Install'_
   
