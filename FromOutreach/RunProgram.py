@@ -20,7 +20,10 @@
 import ROOT
 ROOT.gROOT.ProcessLine(".x tdrstyle.C")
 
-from OutreachExercise2011.DecaysToLeptons.sources import sources
+# Was Originally
+#from OutreachExercise2011.DecaysToLeptons.sources import sources
+# Changed to
+from QuarkNet-CMS-Data-Summer-2019.FromOutreach.sources import sources
 
 # Import the Analyzer you want to run:
 # FourLeptonAnalyzer or TwoLeptonAnalyzer
