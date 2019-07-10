@@ -17,7 +17,7 @@
 ## You should have received a copy of the GNU General Public License
 ## along with CMSOutreachExercise2011. If not, see <http://www.gnu.org/licenses/>.
 
-from OutreachExercise2011.DecaysToLeptons.Sample import Sample
+from QuarkNet-CMS-Data-Summer-2019.FromOutreach.Sample import Sample
 
 data_files = [
         
