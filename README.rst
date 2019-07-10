@@ -10,9 +10,12 @@ accessible init's native format, ROOT.
 
 **Table of Contents:**
 
-* 'ROOT?'
+* 'ROOT'
+
   - 'What is ROOT <#What-is-ROOT>'__
+  
   - 'How to Install <#How-to-Install>'__
+  
   - 'Basic ROOT Structure <#Basic-ROOT-Structure>'__
 
 What is ROOT?
