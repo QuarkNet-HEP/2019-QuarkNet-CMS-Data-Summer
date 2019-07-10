@@ -10,16 +10,17 @@ it's native format, ROOT.
 
 **Table of Contents:**
 
-* 'ROOT?'
+* ROOT
 
-  * :ref:`rst_tutorial`
+  * 'What is ROOT?'_
   
   * 'How to Install'_
   
   * 'Basic ROOT Structure'_
+`Internal and External links`_
 
-rst_tutorial_
-
+Internal and External links
+===========================
 
 ROOT
 ====
