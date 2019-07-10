@@ -18,7 +18,11 @@
 ## along with CMSOutreachExercise2011. If not, see <http://www.gnu.org/licenses/>.
 
 from DataFormats.FWLite import Events, Handle
-from OutreachExercise2011.DecaysToLeptons import rootnotes
+# Was Originally
+#from OutreachExercise2011.DecaysToLeptons import rootnotes
+# Changed to
+from QuarkNet-CMS-Data-Summer-2019.FromOutreach import rootnotes
+
 import ROOT
 import os
 import json
