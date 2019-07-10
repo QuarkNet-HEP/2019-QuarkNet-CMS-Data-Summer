@@ -36,3 +36,17 @@ An installation guide for ROOT can be found `here <https://root.cern/downloading
 
 ROOT can be dowloaded and used on any device, however it is more useful when
 it is used in CERN's virtual machine, CERNVM.
+
+Basic ROOT Structure
+====================
+
+ROOT is constructed like a tree. A TTree is a stored in a TFile, and is a collection
+of TBranch objects. TBranch data is stored in smaller chunks, called TBaskets.
+
+These files can be opened in order to read and write, which is most often done via
+the TFile constructor.
+
+More information on opening, writing, and creating ROOT files can be found _`here <https://root.cern.ch/root-files/>`_.
+
+
+
