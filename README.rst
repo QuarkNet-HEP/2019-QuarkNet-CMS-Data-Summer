@@ -11,8 +11,11 @@ it's native format, ROOT.
 **Table of Contents:**
 
 * 'ROOT?'
+
   * 'What is ROOT?'_
+  
   * 'How to Install'_
+  
   * 'Basic ROOT Structure'_
 
 ROOT
