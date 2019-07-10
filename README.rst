@@ -12,16 +12,24 @@ it's native format, ROOT.
 
 * ROOT
 
-  * `What is ROOT`_
+  * `What is ROOT?`_
   
   * `How to Install`_
   
   * `Basic ROOT Structure`_
 
+* CERNVM
+
+  * `What is CERNVM?`_
+  
+  * `How to Install`_
+  
+  * `Required Downloads and Methods`_
+  
 ROOT
 ====
 
-What is ROOT
+What is ROOT?
 =============
 
 ROOT is a file format developed and used by CERN to keep large amounts of data
@@ -46,7 +54,15 @@ of TBranch objects. TBranch data is stored in smaller chunks, called TBaskets.
 These files can be opened in order to read and write, which is most often done via
 the TFile constructor.
 
-More information on opening, writing, and creating ROOT files can be found _`here <https://root.cern.ch/root-files/>`_.
+More information on opening, writing, and creating ROOT files can be found `here <https://root.cern.ch/root-files/>`_.
 
+CERNVM
+======
 
+What is CERNVM?
+===============
+
+`CERNVM <https://cernvm.cern.ch/>`_ is a virtual machine running Scientific Linux 7, which is used to analyze data
+recieved from CMS. It is required to use CERNVM with these programs, as many of the
+methods used only work on Scientific Linux 7. 
 
