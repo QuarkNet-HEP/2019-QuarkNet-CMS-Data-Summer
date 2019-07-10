@@ -17,7 +17,7 @@
 ## You should have received a copy of the GNU General Public License
 ## along with CMSOutreachExercise2011. If not, see <http://www.gnu.org/licenses/>.
 
-from QuarkNet-CMS-Data-Summer-2019.FromOutreach.Sample import Sample
+from Sample import Sample
 
 data_files = [
         
