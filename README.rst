@@ -4,16 +4,16 @@ QuarkNet CMS Summer 2019
 Introduction
 ------------
 
-This Github page serves to keep all files for the QuarkNet CMS Summer team. The
-goal of this project is to make CMS data received from CERN more accessible in
-it's native format, ROOT.
+Repository for work of the CMS Data group at the University of Notre Dame Quark Net Center from 
+June through July of 2019. Thegoal of this project is to make CMS data received from CERN more 
+accessible init's native format, ROOT.
 
 **Table of Contents:**
 
 * 'ROOT?'
-  * 'What is ROOT <#What-is-ROOT>'__
-  * 'How to Install <#How-to-Install>'__
-  * 'Basic ROOT Structure <#Basic-ROOT-Structure>'__
+  - 'What is ROOT <#What-is-ROOT>'__
+  - 'How to Install <#How-to-Install>'__
+  - 'Basic ROOT Structure <#Basic-ROOT-Structure>'__
 
 What is ROOT?
 =============
