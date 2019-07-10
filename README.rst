@@ -1,9 +1,6 @@
 QuarkNet CMS Summer 2019
 ========================
 
-Introduction
-------------
-
 Repository for work of the CMS Data group at the University of Notre Dame Quark Net Center from 
 June through July of 2019. Thegoal of this project is to make CMS data received from CERN more 
 accessible init's native format, ROOT.
@@ -12,11 +9,11 @@ accessible init's native format, ROOT.
 
 * 'ROOT'
 
-  - 'What is ROOT <#What-is-ROOT>'__
+  - _'What is ROOT'
   
-  - 'How to Install <#How-to-Install>'__
+  - _'How to Install'
   
-  - 'Basic ROOT Structure <#Basic-ROOT-Structure>'__
+  - _'Basic ROOT Structure'
 
 What is ROOT?
 =============
