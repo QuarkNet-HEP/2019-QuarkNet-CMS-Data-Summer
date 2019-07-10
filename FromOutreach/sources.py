@@ -17,6 +17,9 @@
 ## You should have received a copy of the GNU General Public License
 ## along with CMSOutreachExercise2011. If not, see <http://www.gnu.org/licenses/>.
 
+# Was Originally
+
+# Changed to
 from Sample import Sample
 
 data_files = [
