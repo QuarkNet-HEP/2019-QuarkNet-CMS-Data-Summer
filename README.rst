@@ -13,6 +13,7 @@ ROOT
 
 What is ROOT?
 -------------
+
   ROOT is a file format developed and used by CERN to keep large amounts of data
 organized and accessible. Each ROOT file serves as it's own directory, keeping
 data in objects similar to jagged arrays. It is written and typically used in
