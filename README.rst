@@ -1,5 +1,4 @@
 .. _rst_tutorial:
-
 QuarkNet CMS Summer 2019
 ========================
 
