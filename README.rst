@@ -39,6 +39,8 @@ organized and accessible. Each ROOT file serves as it's own directory, keeping
 data in objects similar to jagged arrays. It is written and typically used in
 C++, but has been integrated into both Python and R.
 
+It is not required to download and build root on your native machine as it is already built on CERNVM, but ROOT can be used for any kind of data analysis. You do not need to install root to go through these programs.
+
 
 How to Install ROOT
 -------------------
