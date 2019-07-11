@@ -43,11 +43,8 @@ How to Install ROOT
 For ROOT `v6.18/00 <https://root.cern/content/release-61800>`_, the version used by our group, the
 src can be downloaded using:
 
-.. code-block:: sql
-   :linenos:
+ git clone http://github.com/root-project/root.git
 
-   SELECT * FROM mytable
-   
 An installation guide for ROOT can be found `here <https://root.cern/downloading-root/>`_.
 
 ROOT can be dowloaded and used on any device, however it is more useful when
