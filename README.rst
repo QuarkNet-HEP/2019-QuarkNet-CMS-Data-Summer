@@ -45,7 +45,9 @@ How to Install ROOT
 For `ROOT v6.18/00 <https://root.cern/content/release-61800>`_, the version used by our group, the
 src can be downloaded using:
 
- git clone http://github.com/root-project/root.git
+.. code-block:: bash
+
+    git clone http://github.com/root-project/root.git
  
 An installation guide for ROOT can be found `here <https://root.cern/downloading-root/>`_.
 
@@ -89,8 +91,9 @@ The following commands download CMSSW and load the software to run programs:
 
 .. code-block:: bash
 
-    cmsrel CMSSW_5_3_32 
-    cd CMSSW_5_3_32/src
-    cmsenv
+    cmsrel CMSSW_5_3_32       
+    cd CMSSW_5_3_32/src       
+    cmsenv                    
+    scram b                   
  
-Note that every time you open a terminal in CERNVM or reload the linux kernel, you **have** to enter cmsenv in the src directory before entering commands.
+Note that every time you open a terminal in CERNVM or reload the linux kernel, **you have to enter cmsenv in the src directory before entering commands.**
