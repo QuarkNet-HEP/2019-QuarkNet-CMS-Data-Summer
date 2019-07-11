@@ -88,10 +88,8 @@ includes the commands to start using root and run programs in the CMS console.
 The following commands download CMSSW and load the software to run programs:
 
 .. code-block:: bash
- cmsrel CMSSW_5_3_32
- 
- cd CMSSW_5_3_32/src
- 
- cmsenv
+   cmsrel CMSSW_5_3_32 
+   cd CMSSW_5_3_32/src
+   cmsenv
  
 Note that every time you open a terminal in CERNVM or reload the linux kernel, you **have** to enter cmsenv in the src directory before entering commands.
