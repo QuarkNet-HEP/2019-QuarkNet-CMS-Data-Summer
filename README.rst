@@ -10,9 +10,12 @@ it's native format, ROOT.
 
 Note that each project (.csv file & ROOT file projects) have their own README, and act as standalone programs.
 
-The recommended order to go through this page is the .csv project (forSpyder), then Outreach2011 (fromOutreach), then pattuples2011 (fromPattuples). This will introduce you to all concepts covered in our written program.
+The *recommended* order to go through this page is the .csv project (forSpyder), then Outreach2011 (fromOutreach), then pattuples2011 (fromPattuples). This will introduce you to all concepts covered in our written program.
 
-**Table of Contents:**
+**It might be better to do the .csv project BEFORE going on to ROOT so you can understand the concepts in an easier to understand data format**
+
+Table of Contents:
+------------------
 
 * ROOT
 
