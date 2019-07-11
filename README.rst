@@ -24,8 +24,6 @@ it's native format, ROOT.
   
   * `How to Install and Use CERNVM`_
   
-  * `Required Downloads and Methods`_
-  
 ROOT
 ====
 
@@ -90,3 +88,4 @@ The following commands download CMSSW and load the software to run programs:
  
  cmsenv
  
+Note that every time you open a terminal in CERNVM or reload the linux kernel, 
