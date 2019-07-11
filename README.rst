@@ -92,4 +92,8 @@ The following commands download CMSSW and load the software to run programs:
    cd CMSSW_5_3_32/src
    cmsenv
  
+.. code-block:: bash
+
+    pip install uproot
+    
 Note that every time you open a terminal in CERNVM or reload the linux kernel, you **have** to enter cmsenv in the src directory before entering commands.
