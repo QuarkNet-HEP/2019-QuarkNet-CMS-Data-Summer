@@ -8,6 +8,10 @@ This Github page serves to keep all files for the QuarkNet CMS Summer team. The
 goal of this project is to make CMS data received from CERN more accessible in
 it's native format, ROOT.
 
+Note that each project (.csv file & ROOT file projects) have their own README, and act as standalone programs.
+
+The recommended order to go through this page is the .csv project, then Outreach2011, then pattuples2011. This will introduce you to all concepts covered in our written program.
+
 **Table of Contents:**
 
 * ROOT
@@ -88,4 +92,4 @@ The following commands download CMSSW and load the software to run programs:
  
  cmsenv
  
-Note that every time you open a terminal in CERNVM or reload the linux kernel, 
+Note that every time you open a terminal in CERNVM or reload the linux kernel, you **have** to enter cmsenv.
