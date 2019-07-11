@@ -17,8 +17,8 @@
 ## You should have received a copy of the GNU General Public License
 ## along with CMSOutreachExercise2011. If not, see <http://www.gnu.org/licenses/>.
 
-import ROOT
-ROOT.gROOT.ProcessLine(".x tdrstyle.C")
+import root
+root.groot.ProcessLine(".x tdrstyle.C")
 
 # Was Originally
 #from OutreachExercise2011.DecaysToLeptons.sources import sources
