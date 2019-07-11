@@ -40,6 +40,12 @@ C++, but has been integrated into both Python and R.
 How to Install ROOT
 -------------------
 
+For ROOT `v6.18/00 <https://root.cern/content/release-61800>`_, the version used by our group, the
+src can be downloaded using:
+
+** code-block:: python
+   : git clone http://github.com/root-project/root.git
+   
 An installation guide for ROOT can be found `here <https://root.cern/downloading-root/>`_.
 
 ROOT can be dowloaded and used on any device, however it is more useful when
