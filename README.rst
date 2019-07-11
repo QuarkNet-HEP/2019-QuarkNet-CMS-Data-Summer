@@ -92,4 +92,4 @@ The following commands download CMSSW and load the software to run programs:
  
  cmsenv
  
-Note that every time you open a terminal in CERNVM or reload the linux kernel, you **have** to enter cmsenv.
+Note that every time you open a terminal in CERNVM or reload the linux kernel, you **have** to enter cmsenv in the src directory before entering commands.
