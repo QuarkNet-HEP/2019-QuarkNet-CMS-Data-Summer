@@ -85,6 +85,8 @@ The first step to using CERNVM is to download the CMS software package. This pac
 includes the commands to start using root and run programs in the CMS console.
 The following commands download CMSSW and load the software to run programs:
  cmsrel CMSSW_5_3_32
+ 
  cd CMSSW_5_3_32/src
+ 
  cmsenv
  
