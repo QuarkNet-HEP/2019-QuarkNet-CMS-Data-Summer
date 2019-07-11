@@ -22,7 +22,7 @@ import itertools
 # Was Originally
 #from OutreachExercise2011.DecaysToLeptons.Analyzer import Analyzer, Object
 # Changed to
-from Analyzer import Analyzer, Object
+from QuarkNet-CMS-Data-Summer-2019.FromOutreach.Analyzer import Analyzer, Object
 
 
 class TwoLeptonAnalyzer(Analyzer):
