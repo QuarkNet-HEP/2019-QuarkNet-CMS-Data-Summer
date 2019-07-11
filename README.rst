@@ -39,6 +39,7 @@ organized and accessible. Each ROOT file serves as it's own directory, keeping
 data in objects similar to jagged arrays. It is written and typically used in
 C++, but has been integrated into both Python and R.
 
+
 How to Install ROOT
 -------------------
 
@@ -56,6 +57,7 @@ ROOT uses CMake as a build-generator, a process defined `here <https://root.cern
 ROOT can be dowloaded and built on any device, however it is more useful when
 it is used in CERN's virtual machine, CERNVM.
 
+
 Basic ROOT Structure
 --------------------
 
@@ -67,6 +69,8 @@ the TFile constructor.
 
 More information on opening, writing, and creating ROOT files can be found `here <https://root.cern.ch/root-files/>`_.
 
+
+
 CERNVM
 ======
 
@@ -76,6 +80,7 @@ What is CERNVM?
 `CERNVM <https://cernvm.cern.ch/>`_ is a virtual machine running Scientific Linux 7,
 which is used to analyze data recieved from CMS. It is required to use CERNVM with 
 these programs, as many of the methods used only work on Scientific Linux 7. 
+
 
 How to Install and Use CERNVM
 -----------------------------
