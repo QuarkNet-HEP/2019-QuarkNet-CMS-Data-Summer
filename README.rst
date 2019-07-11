@@ -10,7 +10,7 @@ it's native format, ROOT.
 
 Note that each project (.csv file & ROOT file projects) have their own README, and act as standalone programs.
 
-The recommended order to go through this page is the .csv project, then Outreach2011, then pattuples2011. This will introduce you to all concepts covered in our written program.
+The recommended order to go through this page is the .csv project (forSpyder), then Outreach2011 (fromOutreach), then pattuples2011 (fromPattuples). This will introduce you to all concepts covered in our written program.
 
 **Table of Contents:**
 
@@ -39,7 +39,7 @@ organized and accessible. Each ROOT file serves as it's own directory, keeping
 data in objects similar to jagged arrays. It is written and typically used in
 C++, but has been integrated into both Python and R.
 
-It is not required to download and build root on your native machine as it is already built on CERNVM, but ROOT can be used for any kind of data analysis. You do not need to install root to go through these programs.
+It is **not** required to download and build root on your native machine as it is already built on CERNVM, but is included in this readme as ROOT can be used for any kind of data analysis. **You do not need to install root to go through these programs.**
 
 
 How to Install ROOT
