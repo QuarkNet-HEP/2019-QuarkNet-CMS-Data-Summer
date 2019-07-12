@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jul  1 09:49:17 2019
-
 @author: QuarkNet
 """
 
@@ -11,11 +10,8 @@ import matplotlib.pyplot as plt
 import math
 import collections
 
-file = uproot.open("ttbar.root")
-events = uproot.open("ttbar.root")["events"]
-
-##--CONSTANTS--##
-Length = len(Jet_E)
+file = uproot.open("data.root")
+events = uproot.open("data.root")["events"]
 
 ##--DATA--#####################################################################
 
@@ -33,7 +29,7 @@ NMuon = events.array("NMuon")
 Muon_Px, Muon_Py, Muon_Pz = events.arrays("Muon_P[xyz]*", outputtype = collections.namedtuple)
 Muon_E = events.array("Muon_E")
 Muon_Charge = events.array("Muon_Charge")
-Muon_Iso = events.array("Jet_ID")
+Muon_Iso = events.array("Muon_Iso")
 
 #Electron Data
 NElectron = events.array("NElectron")
@@ -66,104 +62,63 @@ triggerIsoMu24 = events.array("triggerIsoMu24")
 EventWeight = events.array("EventWeight")
 
 ###############################################################################
+Length = len(Jet_E)
+            
+## Histogram of Muon Multiplicity
+plt.figure(1)
+plt.hist(NMuon)
+plt.xlabel("Muon Multiplicity")
 
-#
-# Analyze 
-#
-
-## Finding Esys 
-Esys = [] 
+## Calculating Esys for Two Muons of Opposite Charge
+MuonEsys = [] 
 for x in range(0, Length): 
-    newEsys = 0
-    if not Jet_E[x].size == 0 :
-        newEsys += Jet_E[x][0]
-    if not Muon_E[x].size == 0 :
-        if NMuon[x] == 1:
-            newEsys += Muon_E[x][0]
-        if NMuon[x] == 2:
-            newEsys += Muon_E[x][1]
-    if not Electron_E[x].size == 0 :
-        newEsys += Electron_E[x][0]
-    if not Photon_E[x].size == 0 :
-        newEsys += Photon_E[x][0]
-    Esys.append(newEsys) #Appends Array
-    
-## Finding Psys
-Psys = [] 
-PsysX = []
-PsysY = []
-PsysZ = []
+    if NMuon[x] == 2:
+        if Muon_Charge[x][0] != Muon_Charge[x][1]:
+            newMuonEsys = Muon_E[x][0] + Muon_E[x][1]
+            MuonEsys.append(newMuonEsys) #Appends Array
+            
+## Calculating Psys for Two Muons of Opposite Charge
+MuonPsys = [] 
+MuonPsysX = []
+MuonPsysY = []
+MuonPsysZ = []
 for x in range(0, Length): 
-    newPsysX = 0
-    newPsysY = 0
-    newPsysZ = 0
-    if not Jet_Px[x].size == 0 :
-        newPsysX += Jet_Px[x][0]
-    if not Jet_Py[x].size == 0 :
-        newPsysY += Jet_Py[x][0]
-    if not Jet_Pz[x].size == 0 :
-        newPsysZ += Jet_Pz[x][0]
-        
-    if not Muon_Px[x].size == 0 :
-        newPsysX += Muon_Px[x][0]
-    if not Muon_Py[x].size == 0 :
-        newPsysY += Muon_Py[x][0]
-    if not Muon_Pz[x].size == 0 :
-        newPsysZ += Muon_Pz[x][0]
-        
-    if not Electron_Px[x].size == 0 :
-        newPsysX += Electron_Px[x][0]
-    if not Electron_Py[x].size == 0 :
-        newPsysY += Electron_Py[x][0]
-    if not Electron_Pz[x].size == 0 :
-        newPsysZ += Electron_Pz[x][0]
-        
-    if not Photon_Px[x].size == 0 :
-        newPsysX += Photon_Px[x][0]
-    if not Photon_Py[x].size == 0 :
-        newPsysY += Photon_Py[x][0]
-    if not Photon_Pz[x].size == 0 :
-        newPsysZ += Photon_Pz[x][0]
-      
-    PsysX.append(newPsysX) 
-    PsysY.append(newPsysY) 
-    PsysZ.append(newPsysZ) 
-    newPsys = newPsysX**2 + newPsysY**2 + newPsysZ**2
-    Psys.append(newPsys)
+    if NMuon[x] == 2:
+        if Muon_Charge[x][0] != Muon_Charge[x][1]:
+            newMuonPsysX = Muon_Px[x][0] + Muon_Px[x][1]
+            newMuonPsysY = Muon_Py[x][0] + Muon_Py[x][1]
+            newMuonPsysZ = Muon_Pz[x][0] + Muon_Pz[x][1]
+            MuonPsysX.append(newMuonPsysX) 
+            MuonPsysY.append(newMuonPsysY) 
+            MuonPsysZ.append(newMuonPsysZ) 
+            newMuonPsys = newMuonPsysX**2 + newMuonPsysY**2 + newMuonPsysZ**2
+            MuonPsys.append(newMuonPsys)
 
-## Velocity Stuff 
-B = []
-for x in range(0, Length):
-    if Esys[x][0]!=0:
-        Bx=PsysX[x]/Esys[x]
-        By=PsysY[x]/Esys[x]
-        Bz=PsysZ[x]/Esys[x]
-        # Calculate Bsys, B and Gam for the current event
-        #B=momentum/energy
-        Bsq=Bx**2+By**2+Bz**2
-        sqrtB=math.sqrt(Bsq)
-    else:
-        sqrtB = 1
-    B.append(sqrtB)
+## Calculating Invariant Mass for Two Muons of Opposite Charge
+MuonInvMass = []
+for x in range(0, len(MuonEsys)):
+    newMuonInvMass = math.sqrt((MuonEsys[x]**2) - MuonPsys[x])
+    MuonInvMass.append(newMuonInvMass)
     
-    
-## Finding Invariant Mass
-InvMass = []
-for x in range(0, Length):
-    if (Esys[x][0]**2 - Psys[x] > 0):
-        if (Esys[x][0] != 0):
-            newInvMass = math.sqrt((Esys[x][0]**2) - Psys[x])
-        else: 
-            newInvMass = 0
-    else:
-        newInvMass = 0
-    InvMass.append(newInvMass)
-    
-## Cut InvMass Based on B
-rInvMass=[]
-crInvMass=[]
-for x in range(1, Length):    #nP-1 was here
-        if B[x]>=0.03:
-            rInvMass.append(InvMass[x])
-        else:
-            crInvMass.append(InvMass[x])
+## Histogram of the Invariant Mass of Two Muons of Opposite Charge
+plt.figure(2)
+aM = np.linspace(0, 500, num = 250)
+plt.hist(MuonInvMass, aM)
+plt.xlabel("Mass of Two Muons of Opposite Charge")
+plt.yscale("log")
+
+plt.figure(3)
+bM = np.linspace(0, 5, num = 200)
+plt.hist(MuonInvMass, bM)
+plt.xlabel("Mass of Two Muons of Opposite Charge")
+
+plt.figure(4)
+cM = np.linspace(5, 12, num = 200)
+plt.hist(MuonInvMass, cM)
+plt.xlabel("Mass of Two Muons of Opposite Charge")
+
+
+plt.figure(5)
+dM = np.linspace(12, 120, num = 300)
+plt.hist(MuonInvMass, dM)
+plt.xlabel("Mass of Two Muons of Opposite Charge")
