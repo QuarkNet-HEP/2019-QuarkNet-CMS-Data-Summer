@@ -8,9 +8,9 @@ Spyder is a Python IDE that we used for most of the duration of Quarknet Summer 
 
 **Table of Contents:**
 
-* 'ROOT?'
+* 'Spyder?'
 
-  * 'What is ROOT?'_
+  * 'What is spyder?'_
   
   * 'How to Install'_
   
@@ -19,19 +19,13 @@ Spyder is a Python IDE that we used for most of the duration of Quarknet Summer 
 ROOT
 ====
 
-What is ROOT?
+Spyder?
 =============
 
-ROOT is a file format developed and used by CERN to keep large amounts of data
-organized and accessible. Each ROOT file serves as it's own directory, keeping
-data in objects similar to jagged arrays. It is written and typically used in
-C++, but has been integrated into both Python and R.
+Spyder is a python IDE that uses python 3, it allows us to use the terminal and an editor so we can both write and edit code and it highlights mistakes we might make when programming so it is especially useful. 
 
 How to Install
 ==============
 
-An installation guide for ROOT can be found `here <https://root.cern/downloading-root/>`_.
-
-ROOT can be dowloaded and used on any device, however it is more useful when
-it is used in CERN's virtual machine, CERNVM.
+When installing spyder it is generally recommended to use a program called Anaconda which is really useful!
 
