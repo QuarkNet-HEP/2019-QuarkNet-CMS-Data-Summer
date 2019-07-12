@@ -16,9 +16,6 @@ Spyder is a Python IDE that we used for most of the duration of Quarknet Summer 
   
   * 'Basic ROOT Structure'_
 
-ROOT
-====
-
 Spyder?
 =============
 
