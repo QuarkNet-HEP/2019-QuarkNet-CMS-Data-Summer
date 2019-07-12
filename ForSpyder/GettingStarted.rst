@@ -27,5 +27,14 @@ Spyder is a python IDE that uses python 3, it allows us to use the terminal and 
 How to Install
 ==============
 
-When installing spyder it is generally recommended to use a program called Anaconda which is really useful!
+When installing spyder it is generally recommended to use a program called Anaconda which is really useful.
+access it with the following link
+https://www.anaconda.com/distribution/#download-section
+when you see the page choose the Operating System you are running accordingly(ie. Windows, Linux, OS X)
+ Install the Python 3 version of Anaconda or the Python 2 version(we will be using 3)
+ Anaconda is a pakage that contains numerous useful pakages and libraries for python and it includes the Spyder IDE. 
+ if you have a problem when installing when it says file path has a space as an error, you can negate the efects by choosing install on all users.
+ 
+
+
 
