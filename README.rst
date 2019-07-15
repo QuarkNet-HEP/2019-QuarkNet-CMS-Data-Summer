@@ -10,7 +10,7 @@ it's native format, ROOT.
 
 Note that each project (.csv file & ROOT file projects) have their own README, and act as standalone programs.
 
-The *recommended* order to go through this page is the .csv project (forSpyder), then Outreach2011 (fromOutreach), then pattuples2011 (fromPattuples). This will introduce you to all concepts covered in our written program.
+The *recommended* order to go through this page is the .csv project (forSpyder), then Outreach2011 (fromOutreach), then DimuonSpectrum2012. This will introduce you to all concepts covered in our written program.
 
 **It might be better to do the .csv project BEFORE going on to ROOT so you can understand the concepts in an easier to understand data format**
 
@@ -33,6 +33,12 @@ Table of Contents:
   
   * `Using CERNVM to Explore ROOT Files`_
   
+  * `Installing this Github`_
+  
+* FromOutreach
+
+* DimuonSpectrum2012
+
 ROOT
 ====
 
@@ -146,3 +152,21 @@ We are going to be focusing on *Events* since it holds all of the run data. Open
 .. image:: ./Images/rootbrowser2.png
 
 This should show all of the selected data in a graph.
+
+Installing this Github
+----------------------
+
+To install this github and run the programs contained, enter the following:
+
+.. code-block:: bash
+    
+    cd CMSSW_5_3_32/src  
+    git clone https://github.com/QuarkNet-HEP/QuarkNet-CMS-Data-Summer-2019.git
+
+Note that all runnable files need to be a subdirectory of CMSSW_5_3_32/src to function.
+
+FromOutreach
+============
+
+DimuonSpectrum2012
+==================
