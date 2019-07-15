@@ -135,5 +135,9 @@ Double click on the file name (root://eospublic.cern.ch//...) and it will open l
 
 **INSERT SCREENSHOT**
 
-We are going to be focusing on *Events* since it holds all of the run data. Opening this might take a bit. Once The *Events* folder is opened, exploring the data is fairly simple. Double click on data directory that interests you, Gsf Electron data for example (recoGsfElectron_gsfelectrons__RECO.), and double click on the TTree object to bring up a graphic. This should show all of the selected data in a graph.
+We are going to be focusing on *Events* since it holds all of the run data. Opening this might take a bit. Once The *Events* folder is opened, exploring the data is fairly simple. Double click on data directory that interests you, Gsf Electron data for example (recoGsfElectron_gsfelectrons__RECO.), and double click on the TTree object to bring up a graphic.
+
+**INSERT SCREENSHOT**
+
+This should show all of the selected data in a graph.
 
