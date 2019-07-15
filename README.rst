@@ -115,15 +115,21 @@ Using CERNVM to Explore ROOT Files
 
 Once CERNVM and the required CMSSW files are installed, it is very easy to open and explore ROOT files. For this example we will use a file stored on CERN's servers.
 
-To open the file enter: 
+If this is the first time opening the terminal in this session or you havent loaded CMSSW_5_3_32, enter:
 
 .. code-block:: bash
     
     cd CMSSW_5_3_32/src       
     cmsenv                    
     scram b  
-    root root://eospublic.cern.ch//eos/opendata/cms/Run2011A/ElectronHad/AOD/12Oct2013-v1/20001/001F9231-F141-E311-8F76-003048F00942.root
 
+*Note that this has to be done each time you open a new terminal or reload the system*
+
+Then enter the following:
+
+.. code-block:: bash
+
+    root root://eospublic.cern.ch//eos/opendata/cms/Run2011A/ElectronHad/AOD/12Oct2013-v1/20001/001F9231-F141-E311-8F76-003048F00942.root
 
 This will bring up the ROOT command line, which you can use to navigate the files data. To open the easier to understand ROOT GUI, enter:
 
