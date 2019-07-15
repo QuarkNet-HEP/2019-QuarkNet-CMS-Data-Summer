@@ -225,4 +225,4 @@ class TwoLeptonAnalyzer(Analyzer):
         self.fillHisto('massZ', sample, box.Z.l1.mass(), weight)
 
     def addEvent(self, box):
-self.data.append(box.Z.mass())
+        self.data.append(box.Z.mass())
