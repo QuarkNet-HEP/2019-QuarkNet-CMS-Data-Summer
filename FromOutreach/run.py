@@ -23,7 +23,7 @@ ROOT.gROOT.ProcessLine(".x tdrstyle.C")
 # Was Originally
 #from OutreachExercise2011.DecaysToLeptons.Python.sources import sources
 # Changed to
-from QuarkNet-CMS-Data-Summer-2019.FromOutreach.sources import sources
+from sources import sources
 
 # Import the Analyzer you want to run:
 # FourLeptonAnalyzer or TwoLeptonAnalyzer
@@ -34,7 +34,7 @@ from QuarkNet-CMS-Data-Summer-2019.FromOutreach.sources import sources
 #from OutreachExercise2011.DecaysToLeptons.TwoLeptonAnalyzer import TwoLeptonAnalyzer as MyAnalyzer
 
 # Changed To
-from QuarkNet-CMS-Data-Summer-2019.FromOutreach.Python.TwoLeptonAnalyzer import TwoLeptonAnalyzer as MyAnalyzer
+from TwoLeptonAnalyzer import TwoLeptonAnalyzer as MyAnalyzer
 
 analyzer = MyAnalyzer()
 
