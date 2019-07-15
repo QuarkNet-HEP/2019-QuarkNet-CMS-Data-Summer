@@ -27,7 +27,7 @@ Go to this directory, and download the example code.
 
 mkdir cern
 cd cern
-git clone git:https://github.com/QuarkNet-HEP/QuarkNet-CMS-Data-Summer-2019/tree/master/cmsdata.git
+git clone git://github.com/QuarkNet-HEP/QuarkNet-CMS-Data-Summer-2019/tree/master/cmsdata.git
 
 ```
 Go to the example directory, and compile with `scram b`. 
