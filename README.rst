@@ -31,6 +31,8 @@ Table of Contents:
   
   * `How to Install and Use CERNVM`_
   
+  * `Using CERNVM to Explore ROOT Files`_
+  
 ROOT
 ====
 
@@ -106,4 +108,32 @@ The following commands download CMSSW and load the software to run programs:
     cmsenv                    
     scram b                   
  
-Note that every time you open a terminal in CERNVM or reload the linux kernel, **you have to enter cmsenv in the src directory before entering commands.**
+Note that every time you open a terminal in CERNVM or reload the linux kernel, **you have to enter cmsenv in the src directory before entering commands.** Not doing so will not load the commands required to use root.
+
+Using CERNVM to Explore ROOT Files
+----------------------------------
+
+Once CERNVM and the required CMSSW files are installed, it is very easy to open and explore ROOT files. For this example we will use a file stored on CERN's servers.
+
+To open the file enter: 
+
+.. code-block:: bash
+    
+    cd CMSSW_5_3_32/src       
+    cmsenv                    
+    scram b  
+    root root://eospublic.cern.ch//eos/opendata/cms/Run2011A/ElectronHad/AOD/12Oct2013-v1/20001/001F9231-F141-E311-8F76-003048F00942.root
+
+
+This will bring up the ROOT command line, which you can use to navigate the files data. To open the easier to understand ROOT GUI, enter:
+
+.. code-block:: bash
+
+    TBrowser t
+
+Double click on the file name (root://eospublic.cern.ch//...) and it will open like a folder, showing 6 subdirectories.
+
+**INSERT SCREENSHOT**
+
+We are going to be focusing on *Events* since it holds all of the run data. Opening this might take a bit. Once The *Events* folder is opened, exploring the data is fairly simple. Double click on data directory that interests you, Gsf Electron data for example (recoGsfElectron_gsfelectrons__RECO.), and double click on the TTree object to bring up a graphic. This should show all of the selected data in a graph.
+
