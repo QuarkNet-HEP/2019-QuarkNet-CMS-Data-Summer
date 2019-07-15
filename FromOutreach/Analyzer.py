@@ -21,7 +21,7 @@ from DataFormats.FWLite import Events, Handle
 # Was Originally
 #from OutreachExercise2011.DecaysToLeptons import rootnotes
 # Changed to
-from QuarkNet-CMS-Data-Summer-2019.FromOutreach import rootnotes
+import rootnotes
 
 import ROOT
 import os
