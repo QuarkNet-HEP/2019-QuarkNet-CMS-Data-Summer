@@ -100,8 +100,9 @@ How to Install and Use CERNVM
 
 First and foremost, `VirtualBox 5.2.2 <https://www.virtualbox.org/wiki/Download_Old_Builds_5_2/>`_ is needed to run CERNVM.
 
-Once VirtualBox is installed, CERNVM's most recent vm image can be downloaded `here <http://cernvm.cern.ch/portal/downloads>`_. 
-Open the image file with VirtualBox to start the virtual machine.
+Next download the CMS-specific CernVM image as OVA file from: CMS VM Image for 2011 CMS Open Data. This VM Image can be used for data from 2011 and 2012 (for data from 2010 follow the instruction in CMS 2010 Virtual Machines: How to install).
+
+By double clicking the downloaded file, VirtualBox imports the image with ready-to-run settings. Then, you launch the CMS-specific CernVM, which boots into the graphical user interface and sets up the CMS environment. Be patient, it will take a while.
 
 The first step to using CERNVM is to download the CMS software package. This package 
 includes the commands to start using root and run programs in the CMS console.
