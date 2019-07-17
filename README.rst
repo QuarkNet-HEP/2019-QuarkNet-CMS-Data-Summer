@@ -25,17 +25,15 @@ Table of Contents:
   
   * `Basic ROOT Structure`_
 
-* CERNVM
+* CernVM
 
-  * `What is CERNVM?`_
+  * `What is CernVM?`_
   
-  * `How to Install and Use CERNVM`_
+  * `How to Install and Use CernVM`_
   
-  * `Using CERNVM to Explore ROOT Files`_
+  * `Using CernVM to Explore ROOT Files`_
   
   * `Installing this Github`_
-  
-* `FromOutreach`_
 
 * `CMSData`_
 
@@ -50,7 +48,7 @@ organized and accessible. Each ROOT file serves as it's own directory, keeping
 data in objects similar to jagged arrays. It is written and typically used in
 C++, but has been integrated into both Python and R.
 
-It is **not** required to download and build root on your native machine as it is already built on CERNVM, but is included in this readme as ROOT can be used for any kind of data analysis. **You do not need to install root to go through these programs.**
+It is **not** required to download and build root on your native machine as it is already built on `CernVM`_, but is included in this readme as ROOT can be used for any kind of data analysis. **You do not need to install root to go through these programs.**
 
 
 How to Install ROOT
@@ -68,7 +66,7 @@ An installation guide for ROOT can be found `here <https://root.cern/downloading
 ROOT uses CMake as a build-generator, a process defined `here <https://root.cern/building-root>`_.
 
 ROOT can be dowloaded and built on any device, however it is more useful when
-it is used in CERN's virtual machine, CERNVM.
+it is used in CERN's virtual machine, CernVM.
 
 
 Basic ROOT Structure
@@ -84,27 +82,27 @@ More information on opening, writing, and creating ROOT files can be found `here
 
 
 
-CERNVM
+CernVM
 ======
 
-What is CERNVM?
+What is CernVM?
 ---------------
 
-`CERNVM <https://cernvm.cern.ch/>`_ is a virtual machine running Scientific Linux 7,
-which is used to analyze data recieved from CMS. It is required to use CERNVM with 
+`CernVM <https://cernvm.cern.ch/>`_ is a virtual machine running Scientific Linux 7,
+which is used to analyze data recieved from CMS. It is required to use CernVM with 
 these programs, as many of the methods used only work on Scientific Linux 7. 
 
 
-How to Install and Use CERNVM
+How to Install and Use CernVM
 -----------------------------
 
-First and foremost, `VirtualBox 5.2.2 <https://www.virtualbox.org/wiki/Download_Old_Builds_5_2/>`_ is needed to run CERNVM.
+First and foremost, `VirtualBox 5.2.2 <https://www.virtualbox.org/wiki/Download_Old_Builds_5_2/>`_ is needed to run CernVM.
 
 Next download the CMS-specific CernVM image as OVA file from: `CMS VM Image <http://opendata.cern.ch/record/252>`. This VM Image can be used for data from 2011 and 2012.
 
 By double clicking the downloaded file, VirtualBox imports the image with ready-to-run settings. Then, you launch the CMS-specific CernVM, which boots into the graphical user interface and sets up the CMS environment. Be patient, it will take a while.
 
-The first step to using CERNVM is to download the CMS software package. This package 
+The first step to using CernVM is to download the CMS software package. This package 
 includes the commands to start using root and run programs in the CMS console.
 The following commands download CMSSW and load the software to run programs:
 
@@ -115,12 +113,12 @@ The following commands download CMSSW and load the software to run programs:
     cmsenv                    
     scram b                   
  
-Note that every time you open a terminal in CERNVM or reload the linux kernel, **you have to enter cmsenv in the src directory before entering commands.** Not doing so will not load the commands required to use root.
+Note that every time you open a terminal in CernVM or reload the linux kernel, **you have to enter cmsenv in the src directory before entering commands.** Not doing so will not load the commands required to use root.
 
-Using CERNVM to Explore ROOT Files
+Using CernVM to Explore ROOT Files
 ----------------------------------
 
-Once CERNVM and the required CMSSW files are installed, it is very easy to open and explore ROOT files. For this example we will use a file stored on CERN's servers.
+Once CernVM and the required CMSSW files are installed, it is very easy to open and explore ROOT files. For this example we will use a file stored on CERN's servers.
 
 If this is the first time opening the terminal in this session or you havent loaded CMSSW_5_3_32, enter:
 
@@ -165,9 +163,6 @@ To install this github and run the programs contained, enter the following:
     git clone https://github.com/QuarkNet-HEP/QuarkNet-CMS-Data-Summer-2019.git
 
 Note that all runnable files need to be a subdirectory of CMSSW_5_3_32/src to function.
-
-FromOutreach
-============
 
 CMSData
 =======
