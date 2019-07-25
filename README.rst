@@ -96,7 +96,7 @@ these programs, as many of the methods used only work on Scientific Linux 7.
 How to Install and Use CernVM
 -----------------------------
 
-First and foremost, `VirtualBox 5.2.2 <https://www.virtualbox.org/wiki/Download_Old_Builds_5_2/>`_ is needed to run CernVM.
+First and foremost, `VirtualBox 5.2.2 <https://www.virtualbox.org/wiki/Download_Old_Builds_5_2/>`_ is needed to run CernVM. Scroll down to VirtualBox 5.2.20 and select the appropriate operating system.
 
 Next download the CMS-specific CernVM image as OVA file from: `CMS VM Image <http://opendata.cern.ch/record/252>`_. This VM Image can be used for data from 2011 and 2012.
 
